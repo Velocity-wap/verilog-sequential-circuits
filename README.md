@@ -17,6 +17,7 @@ A collection of sequential, FSM logic circuits implemented in Verilog HDL from s
 |--------|-------------|
 | Traffic Light Controller | 3-state Moore FSM, cycles GREEN→YELLOW→RED every clock edge |
 | Sequence Detector (1011) | 5-state Moore FSM, asserts output when last four input bits match "1011", transitions on each clock edge |
+| Handshake Protocol | 4-state Moore FSM, coordinates req/ack two-signal handshake protocol between sender and receiver, transitions IDLE->REQUEST->TRANSFER->DONE based on send and ack inputs |
 
 ## Tools
 - Icarus Verilog
