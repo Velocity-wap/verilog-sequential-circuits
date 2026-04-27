@@ -26,8 +26,7 @@ A collection of sequential, FSM logic circuits implemented in Verilog HDL from s
 ## Structure
 Each module has a corresponding testbench. Simulate using:
 ```bash
-iverilog -o sim/output rtl/module.v tb/module_tb.v
-cd sim
+iverilog -o output module.v module_tb.v
 vvp out
 gtkwave output.vcd
 ```
